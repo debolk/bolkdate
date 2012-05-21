@@ -22,6 +22,13 @@
             <div data-role="content" data-theme="a">
                 <?php echo $content; ?>     
             </div>
+            <div data-role="footer"> 
+                <h4>BolkDate is bedacht en ontwikkeld door 
+                <a href="https://www.facebook.com/jakobbuis">Jakob</a>,
+                ge&iuml;nspireerd door
+                <a href="https://www.facebook.com/xrverheij">Xander</a>.
+                </h4>
+            </div>
         </div>
     </body>
 </html>
