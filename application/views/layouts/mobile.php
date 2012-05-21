@@ -24,9 +24,9 @@
             </div>
             <div data-role="footer"> 
                 <h4>BolkDate is bedacht en ontwikkeld door 
-                <a href="https://www.facebook.com/jakobbuis">Jakob</a>,
+                <a href="https://www.facebook.com/jakobbuis" style="color: white;">Jakob</a>,
                 ge&iuml;nspireerd door
-                <a href="https://www.facebook.com/xrverheij">Xander</a>.
+                <a href="https://www.facebook.com/xrverheij" style="color: white;">Xander</a>.
                 </h4>
             </div>
         </div>
