@@ -114,7 +114,7 @@ Kohana::modules(array(
  */
 Route::set('beauty', 'beauty')->defaults(array('controller' => 'mobile','action' => 'beauty'));
 Route::set('nerd', 'nerd')->defaults(array('controller' => 'mobile','action' => 'nerd'));
-Route::set('match', 'match')->defaults(array('controller' => 'mobile','action' => 'match'));
+Route::set('register', 'register')->defaults(array('controller' => 'mobile','action' => 'register'));
 Route::set('beamer', 'beamer')->defaults(array('controller' => 'beamer','action' => 'index'));
 
 Route::set('default', '(<controller>(/<action>(/<id>)))')

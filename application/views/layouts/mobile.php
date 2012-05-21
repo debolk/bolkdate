@@ -6,7 +6,7 @@
 
         <title>BolkDate</title>
         <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile.structure-1.1.0.css" />
-        <link rel="stylesheet" type="text/css" href="/stylesheets/mobile.css" />
+        <link rel="stylesheet" type="text/css" href="/stylesheets/<?php echo $mobile_theme; ?>.mobile.css" />
 
         <script type="text/javascript" src="/javascripts/jquery.js"></script>
         <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
@@ -16,10 +16,10 @@
     </head>
     <body class="<?php echo Request::$current->controller(); ?> <?php echo Request::$current->action(); ?>">
        <div data-role="page">
-            <div data-role="header" data-theme="<?php echo $mobile_theme; ?>">
+            <div data-role="header" data-theme="a">
                 <h1>BolkDate</h1>
             </div>
-            <div data-role="content" data-theme="<?php echo $mobile_theme; ?>">
+            <div data-role="content" data-theme="a">
                 <?php echo $content; ?>     
             </div>
         </div>
