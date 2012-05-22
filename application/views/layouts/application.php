@@ -13,10 +13,19 @@
         <base href="<?php echo URL::base(true,true); ?>" />
     </head>
     <body class="<?php echo Request::$current->controller(); ?> <?php echo Request::$current->action(); ?>">
-        <div id="header">
-            <img src="/images/logo-klein.png" width="128" height="128" alt="" />
-            <h1>BolkDate</h1>
+        <div id="header" class="clearfix">
+            <h1>
+                <img src="/images/logo-klein.png" width="64" height="64" alt="" />
+                BolkDate
+            </h1>
         </div>
-        <?php echo $content; ?>
+        <div id="content" class="clearfix">
+            <?php echo $content; ?>
+        </div>
+        <div id="footer" class="clearfix">
+            <span id="count_single">0</span> vrijgezellen beschikbaar
+            &mdash;
+            <span id="count_dates">0</span> speeddates gehouden
+        </div>
     </body>
 </html>
