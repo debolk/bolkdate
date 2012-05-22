@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="/stylesheets/application.css" type="text/css"/>
 
         <script type="text/javascript" src="/javascripts/jquery.js"></script>
+        <script type="text/javascript" src="/javascripts/countdown.js"></script>
         <script type="text/javascript" src="/javascripts/application.js"></script>
 
         <base href="<?php echo URL::base(true,true); ?>" />
@@ -23,7 +24,7 @@
             <?php echo $content; ?>
         </div>
         <div id="footer" class="clearfix">
-            <span id="count_single">0</span> vrijgezellen beschikbaar
+            <span id="count_singles">0</span> vrijgezellen beschikbaar
             &mdash;
             <span id="count_dates">0</span> speeddates gehouden
         </div>

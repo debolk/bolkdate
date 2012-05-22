@@ -32,13 +32,13 @@ body {
 
 #content {
    	padding: 0;
-   	padding-bottom:5%;
+   	padding-bottom:7%;
 }
 #footer {
    position:absolute;
    bottom:0;
    width:100%;
-   height:5%;
+   height:7%;
    text-align: center;
    font-style: italic;
 }
@@ -65,10 +65,21 @@ h1 {
 	padding: 0 10%;
 }
 	.box img {
-		margin: 0 auto;
+		
 	}
 
 	.box h2 {
 		font-size: xx-large;
 		margin-bottom: 1em;
 	}
+
+  .qr {
+    margin: 0 auto;
+    width: auto;
+  }
+
+  .qr.small {
+    margin: 0;
+    width: 50%;
+    height: 50%;
+  }

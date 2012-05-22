@@ -34,9 +34,9 @@ class Model_Person extends ORM
 	public static function create_date()
 	{
 		// Find best match
-		$row = Model_Person::find_best_match()->row();
-		$person1 = Model_Person::factory($row['p1_id']);
-		$person2 = Model_Person::factory($row['p2_id']);
+		$row = Model_Person::find_best_match()->current();
+		$person1 = ORM::factory('person', $row['p1_id']);
+		$person2 = ORM::factory('person', $row['p2_id']);
 
 		// Create date
 		$person1->date = $person2->id;
@@ -45,6 +45,40 @@ class Model_Person extends ORM
 		$person2->save();
 
 		// Return data for the interface
-		return $row;
+		return array(
+				'p1'=> $person1,
+				'p2'=> $person2,
+				'match' => $row['match']
+				);
+	}
+
+	public static function count_singles()
+	{
+		$row = DB::query(Database::SELECT, 'SELECT COUNT(*) AS "count" FROM people WHERE date IS NULL')->execute()->current();
+		return $row['count'];
+	}
+
+	public static function count_dates()
+	{
+		$row = DB::query(Database::SELECT, 'SELECT COUNT(*) AS "count" FROM people WHERE date IS NOT NULL')->execute()->current();
+		return $row['count']/2;
+	}
+
+	public static function count_single_nerds()
+	{
+		$row = DB::query(Database::SELECT, 'SELECT COUNT(*) AS "count" 
+												FROM people 
+												WHERE date IS NULL 
+												AND sex = '.Model_Person::SEX_NERD)->execute()->current();
+		return $row['count'];
+	}
+
+	public static function count_single_beauties()
+	{
+		$row = DB::query(Database::SELECT, 'SELECT COUNT(*) AS "count" 
+												FROM people 
+												WHERE date IS NULL 
+												AND sex = '.Model_Person::SEX_BEAUTY)->execute()->current();
+		return $row['count'];
 	}
 }
