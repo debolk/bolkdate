@@ -20,7 +20,7 @@ return array
 			 */
 			'hostname'   => 'localhost',
 			'database'   => 'bolkdate',
-			'username'   => 'bolkdate',
+			'username'   => 'bolk',
 			'password'   => 'FA4r9xPvKQ03',
 			'persistent' => TRUE,
 		),
