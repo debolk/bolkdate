@@ -33,8 +33,12 @@ class Controller_Beamer extends Controller_Application
 	public function action_start_date()
 	{
 		$date = Model_Person::create_date();
-		$front = array();
-		$front[] = $date['match'];
+		$front = array(
+					'person1' => $date['person1']-> name,
+					'person2' => $date['person2']-> name,
+					'match' => $date['match']
+				);
+		echo(json_encode($front));
 		exit;
 	}
 }
