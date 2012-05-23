@@ -18,7 +18,7 @@ return array
 			 *
 			 * Ports and sockets may be appended to the hostname.
 			 */
-			'hostname'   => 'localhost',
+			'hostname'   => 'mysql.bestuur52.nl',
 			'database'   => 'bolkdate',
 			'username'   => 'bolk',
 			'password'   => 'FA4r9xPvKQ03',
