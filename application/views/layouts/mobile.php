@@ -30,7 +30,7 @@
                     <a href="http://xrv.nl/" style="color: white;">Xander</a>.<br>
                     Mobiele applicatie gesponsord door 
                     <a href="http://www.ogd.nl" style="color: white;">OGD</a><br>
-                    <img src="/images/logo-ogd.png" width="250" height="146-" alt="OGD - samen slimmer" style="text-align: center; margin-top: 0.5em;" />
+                    <img src="/images/logo-ogd.png" width="125" height="73" alt="OGD - samen slimmer" style="text-align: center; margin-top: 0.5em;" />
                 </h4>
             </div>
         </div>
