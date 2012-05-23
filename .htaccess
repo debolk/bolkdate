@@ -17,8 +17,6 @@ RewriteRule ^(?:application|modules|system)\b.* index.php/$0 [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# Old Apache fix
-RewriteRule ^(index\.php) - [PT,L]
-
 # Rewrite all other URLs to index.php/URL
-RewriteRule .* index.php/$0 [PT,L,QSA]
+RewriteRule ^$ index.php [PT,L]
+RewriteRule .* index.php/$0 [PT,L]
