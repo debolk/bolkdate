@@ -21,7 +21,7 @@ return array
 			'hostname'   => 'localhost',
 			'database'   => 'bolkdate',
 			'username'   => 'bolkdate',
-			'password'   => 'Je5EG2',
+			'password'   => 'FA4r9xPvKQ03',
 			'persistent' => TRUE,
 		),
 		'table_prefix' => '',
