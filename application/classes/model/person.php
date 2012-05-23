@@ -46,8 +46,8 @@ class Model_Person extends ORM
 
 		// Return data for the interface
 		return array(
-				'p1'=> $person1,
-				'p2'=> $person2,
+				'person1'=> $person1,
+				'person2'=> $person2,
 				'match' => $row['match']
 				);
 	}

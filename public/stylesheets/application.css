@@ -61,12 +61,12 @@ h1 {
 .box {
 	float: left;
 	width: 30%;
-	height: 80%;
 	padding: 0 10%;
 }
-	.box img {
-		
-	}
+.dubbel_box {
+    float: left;
+    width: 100%;
+}
 
 	.box h2 {
 		font-size: xx-large;
@@ -83,3 +83,20 @@ h1 {
     width: 50%;
     height: 50%;
   }
+
+    #date_info {
+        display: none;
+        width: 75%;
+        margin: 1em auto;
+        text-align: center;
+    }
+
+    #date_info h2 {
+        font-size: xx-large;
+        margin: 1em 0;
+    }
+
+    
+    #date_info img {
+        vertical-align: middle;
+    }

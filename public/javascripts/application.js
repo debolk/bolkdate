@@ -11,7 +11,7 @@ $(document).ready(function(){
 function update_number(selector, url)
 {
 	$(selector).html(get_number(url));
-	//setTimeout("update_number('"+selector+"', '"+url+"')", 2*1000);
+	setTimeout("update_number('"+selector+"', '"+url+"')", 2*1000);
 }
 
 function get_number(url)
@@ -40,7 +40,7 @@ function check_for_date()
 	}
 	else {
 		// Check back later
-		//setTimeout("check_for_date()", 15*1000);
+		setTimeout("check_for_date()", 15*1000);
 	}
 }
 
@@ -51,21 +51,42 @@ function start_date()
 		// make QR smaller
 		toggle_qr_code();
 		// add people specs
+		$('#date_info').show();
+		$('#person1').html(response.person1);
+		$('#person2').html(response.person2);
+		$('#match').html(parseFloat(response.match*100).toFixed(2));
 		// show a countdown of 2 minutes
-		// after 2 minutes, end the date ->
+		start_countdown(120);
 	},'json');
 }
 
 function end_date()
 {
 	// Remove people specs
+	$('#date_info').hide();
 	// remove countdown
+	remove_countdown();
 	// make QR larger
 	toggle_qr_code();
 	// after one minute -> check_for_date
+	setTimeout("check_for_date()", 60*1000);
 }
 
 function toggle_qr_code()
 {
 	$('.qr').toggleClass('small');
+}
+
+function start_countdown(length)
+{
+	$('#countdown').countdown({
+		until: +length,
+		layout: '{mnn}:{snn}',
+		onExpiry: end_date
+	}); 
+}
+
+function remove_countdown()
+{
+	$('#countdown').html('');
 }

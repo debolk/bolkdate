@@ -6,8 +6,14 @@
 	<h2>Beauties:</h2>
 	<img src="/images/qr-beauty.png" width="372" height="372" class="qr" />
 </div>
-<div id="date_info">
-	<h3 id="person1"></h3>
-	<img src="/images/logo-klein.png" width="128" height="128" alt="" />
-	<h3 id="person2"></h3>
+<div class="dubbel_box">
+	<div id="date_info">
+		<h2><span id="match">0</span>%</h2>
+		<h2>
+			<span id="person1">Jakob</span>
+			<img src="/images/logo-klein.png" width="128" height="128" alt="" />	
+			<span id="person2">Jakob</span>
+		</h2>
+		<h2>Tijd over: <span id="countdown"></span></h2>
+	</div>
 </div>

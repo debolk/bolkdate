@@ -1,5 +1,5 @@
 CREATE TABLE `people` (
-	`id` INT(10) NOT NULL,
+	`id` INT(10) NOT NULL AUTO_INCREMENT,
 	`name` VARCHAR(50) NOT NULL,
 	`sex` TINYINT(1) NOT NULL,
 	`shower` TINYINT(2) NOT NULL,
