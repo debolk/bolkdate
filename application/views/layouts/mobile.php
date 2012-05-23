@@ -22,16 +22,16 @@
             <div data-role="content" data-theme="a">
                 <?php echo $content; ?>     
             </div>
-            <div data-role="footer"> 
-                <h4>
+            <div data-role="footer">
+                <p style="text-align: center;">
                     BolkDate is bedacht en ontwikkeld door 
-                    <a href="https://www.facebook.com/jakobbuis" style="color: white;">Jakob</a>,
+                    <a href="https://www.facebook.com/jakobbuis" style="color: white;" data-native>Jakob</a>,
                     ge&iuml;nspireerd door
                     <a href="http://xrv.nl/" style="color: white;">Xander</a>.<br>
                     Mobiele applicatie gesponsord door 
                     <a href="http://www.ogd.nl" style="color: white;">OGD</a><br>
                     <img src="/images/logo-ogd.png" width="125" height="73" alt="OGD - samen slimmer" style="text-align: center; margin-top: 0.5em;" />
-                </h4>
+                </p> 
             </div>
         </div>
     </body>
