@@ -26,7 +26,11 @@
                 <h4>BolkDate is bedacht en ontwikkeld door 
                 <a href="https://www.facebook.com/jakobbuis" style="color: white;">Jakob</a>,
                 ge&iuml;nspireerd door
-                <a href="http://xrv.nl/" style="color: white;">Xander</a>.
+                <a href="http://xrv.nl/" style="color: white;">Xander</a>.<br>
+                Mobiele applicatie gesponsord door 
+                <a href="http://www.ogd.nl">
+                    <img src="/images/logo-ogd.jpg" width="88" height="62" alt="OGD - samen slimmer" style="vertical-align: top" />
+                </a>
                 </h4>
             </div>
         </div>
