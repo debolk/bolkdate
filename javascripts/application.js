@@ -86,7 +86,7 @@ function end_date()
 	toggle_qr_code();
 	// still on a date series? do it again!
 	if (dates_remaning > 0) {
-		setTimeout("start_date()", 10*1000);
+		setTimeout("start_date()", 5*1000);
 	}
 	else {
 		setTimeout("check_for_date()", 300*1000);	
@@ -109,5 +109,5 @@ function start_countdown(length, callback)
 
 function remove_countdown()
 {
-	$('#countdown').html('');
+	$('#countdown').countdown('destroy');
 }
