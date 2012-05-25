@@ -26,7 +26,7 @@
 	<h3>Over haar</h3>
 	<p>
 		<label class="select" for="hair">Haarkleur</label>
-		<select name="hair" id="hair" data-native-menu="false">
+		<select name="hair" id="hair" data-native-menu="true">
 			<option value="<?php echo Model_Person::HAIR_BLACK; ?>">Zwart</option>
 			<option value="<?php echo Model_Person::HAIR_BROWN; ?>" selected>Bruin</option>
 			<option value="<?php echo Model_Person::HAIR_RED; ?>">Rood</option>
@@ -35,7 +35,7 @@
 	</p>
 	<p>
 		<label class="select" for="boobs">Cupmaat</label>
-		<select name="boobs" id="boobs" data-native-menu="false">
+		<select name="boobs" id="boobs" data-native-menu="true">
 			<option value="<?php echo Model_Person::BOOBS_AA; ?>">AA</option>
 			<option value="<?php echo Model_Person::BOOBS_A; ?>">A</option>
 			<option value="<?php echo Model_Person::BOOBS_B; ?>" selected>B</option>
