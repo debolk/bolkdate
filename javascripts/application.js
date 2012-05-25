@@ -5,20 +5,27 @@ $(document).ready(function(){
 	hide_scrollbars();
 
 	// Keep statistics updated at bottom of the page
-	update_number('#count_singles','/beamer/count_singles');
-	update_number('#count_dates','/beamer/count_dates');
+	update_singles_count();
+	update_dates_count();
 
 	// Check whether we can start a date
 	check_for_date();
 });
 
-function update_number(selector, url)
+function update_singles_count()
 {
-	// Update the number
-	$(selector).html(get_number(url));
+	$.get('/beamer/count_singles', null, function(response){
+		$('#count_singles').html(response);	
+		setTimeout(update_singles_count, 2*1000);
+	});
+}
 
-	// Check again after two seconds
-	setTimeout("update_number('"+selector+"', '"+url+"')", 2*1000);
+function update_dates_count()
+{
+	$.get('/beamer/count_dates', null, function(response){
+		$('#count_dates').html(response);	
+		setTimeout(update_dates_count, 2*1000);
+	});
 }
 
 function get_number(url)
