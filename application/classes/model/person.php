@@ -27,7 +27,7 @@ class Model_Person extends ORM
 		return DB::query(Database::SELECT, 'SELECT p1_id, p2_id, 
 												1-(diff_shower+diff_glasses+diff_hair+diff_boobs)/4 AS `match`
 												FROM matches
-												ORDER BY `match`
+												ORDER BY `match` DESC
 												LIMIT 1')->execute();
 	}
 
