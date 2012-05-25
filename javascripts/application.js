@@ -55,7 +55,7 @@ function check_for_date()
 	// Enough people? Let's start dating!
 	if (nerds > 2 && beauties > 2) {
 		// Start a series of three dates
-		dates_remaning = 3;
+		dates_remaning = Math.min(nerds, beauties);
 		start_date();
 	}
 	else {
@@ -97,11 +97,11 @@ function end_date()
 	toggle_qr_code();
 	// still on a date series? do it again!
 	if (dates_remaning > 0) {
-		setTimeout("start_date()", 5*1000);
+		setTimeout("start_date()", 60*1000);
 	}
 	else {
 		$('#next_date').show();
-		start_countdown('#next_date_timer', 300, check_for_date)
+		start_countdown('#next_date_timer', 30*60, check_for_date)
 	}
 }
 
