@@ -44,7 +44,11 @@ function hide_scrollbars()
 
 function check_for_date()
 {
-	// get tehe number of singles, nerds and beauties
+	// hide timeout after dating
+	$('#next_date_timer').countdown('destroy');
+	$('#next_date').hide();
+
+	// get the number of singles, nerds and beauties
 	var nerds    = get_number('/beamer/count_single_nerds');
 	var beauties = get_number('/beamer/count_single_beauties');
 
@@ -75,7 +79,7 @@ function start_date()
 			$('#match').html(parseFloat(response.match*100).toFixed(2));
 			$('#date_info').show();
 			// show a countdown of 2 minutes
-			start_countdown(120, end_date);
+			start_countdown('#countdown', 120, end_date);
 		},'json');
 	}
 	else {
@@ -96,7 +100,8 @@ function end_date()
 		setTimeout("start_date()", 5*1000);
 	}
 	else {
-		setTimeout("check_for_date()", 300*1000);	
+		$('#next_date').show();
+		start_countdown('#next_date_timer', 300, check_for_date)
 	}
 }
 
@@ -105,9 +110,9 @@ function toggle_qr_code()
 	$('.qr').toggleClass('small');
 }
 
-function start_countdown(length, callback)
+function start_countdown(selector, length, callback)
 {
-	$('#countdown').countdown({
+	$(selector).countdown({
 		until: +length,
 		layout: '{mnn}:{snn}',
 		onExpiry: callback

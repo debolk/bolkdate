@@ -84,6 +84,11 @@ h1 {
     height: 50%;
   }
 
+    h2#next_date {
+      margin-top: 1em;
+      text-align: center;
+    }
+
     #date_info {
         display: none;
         width: 75%;

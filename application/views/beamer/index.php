@@ -7,6 +7,7 @@
 	<img src="/images/qr-beauty.png" width="372" height="372" class="qr" />
 </div>
 <div class="dubbel_box">
+	<h2 id="next_date">Volgende date (bij voldoende aanmelding) over: <span id="next_date_timer"></span></h2>
 	<div id="date_info">
 		<h2><span id="match">0</span>%</h2>
 		<h2>
