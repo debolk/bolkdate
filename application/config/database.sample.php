@@ -18,10 +18,10 @@ return array
 			 *
 			 * Ports and sockets may be appended to the hostname.
 			 */
-			'hostname'   => 'mysql.bestuur52.nl',
-			'database'   => 'bolkdate',
-			'username'   => 'bolk',
-			'password'   => 'FA4r9xPvKQ03',
+			'hostname'   => '',
+			'database'   => '',
+			'username'   => '',
+			'password'   => '',
 			'persistent' => TRUE,
 		),
 		'table_prefix' => '',
